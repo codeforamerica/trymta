@@ -1,8 +1,10 @@
+# Project
+author      : Zach Williams, @zachwill
+analytics   : UA-XXXXX-X
+description : "Macon MTA will be sponsoring a Try Transit week June 24-28."
+title       : Try MTA Transit
+
+# Defaults
 pygments: true
 exclude:
   - README.md
-
-author      : Zach Williams, @zachwill
-analytics   : UA-XXXXX-X
-description : "A blank site description."
-title       : A Site
