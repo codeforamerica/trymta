@@ -3,3 +3,14 @@ layout: default
 ---
 
 <iframe width='500' height='600' frameBorder='0' src='http://a.tiles.mapbox.com/v3/jllord.mta.html'></iframe>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      var height = $(window).height(),
+          width = $(window).width();
+
+      $('iframe').attr({
+        height: height,
+        width:width
+      })
+  })
+</script>
