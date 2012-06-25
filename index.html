@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top hidden-desktop">
   <div class="navbar-inner">
     <div class="container">
       <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -25,7 +25,8 @@ layout: default
 <div class="container-fluid map">
   <div class="row-fluid">
     <div class="span12">
-      <iframe width='320' height='960' frameBorder='0' src='http://a.tiles.mapbox.com/v3/jllord.mta.html'></iframe>
+      <iframe class='hidden-desktop' width='320' height='960' frameBorder='0' src='http://a.tiles.mapbox.com/v3/jllord.mta.html'></iframe>
+      <iframe class='hidden-phone hidden-tablet' width='900' height='600' frameBorder='0' src='http://jlord.us/map/'></iframe>
     </div>
   </div>
 </div>
