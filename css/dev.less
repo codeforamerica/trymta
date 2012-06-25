@@ -1,100 +1,29 @@
 /* Import Awesomeness */
-@import "override.less";
+@import "less/mixins.less";
 
-.row {
-    padding: 25px 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.hidden {
-    display: none;
+.navbar-fixed-top {
+  margin-bottom: 0;
 }
 
-.header {
-    #gradient > .vertical();
-    color: #fff;
-    padding: 150px 0 100px;
-    text-shadow: 2px 2px 0 #000;
-    h1 {
-        font-size: 72px;
-        line-height: .9em;
-        padding-bottom: 25px;
-    }
-    .tagline {
-        font-size: 28px;
-        line-height: 1.1em;
-    }
+.navbar .btn {
+  margin-right: 22px;
 }
 
-.apps {
-    padding: 50px 0 25px;
+.map {
+    padding: 0;
 }
 
-.schedule {
-    margin-bottom: 50px;
+iframe {
+    width: 100%;
 }
 
-.footer {
-    #gradient > .vertical();
-    padding: 25px 0;
-}
-
-
-/* Desktop */
-@media (min-width: 1200px) {
-    .header {
-        padding: 200px 0 150px;
-        h1 {
-            font-size: 92px;
-        }
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 979px) {
-    .header {
-        h1 {
-            font-size: 60px;
-        }
-        .tagline {
-            font-size: 22px;
-        }
-    }
-    .info{
-        padding: 25px 0;
-    }
-}
-
-/* Small tablets */
 @media (max-width: 767px) {
-    body {
-        padding: 0;
-    }
-    .row {
-        padding: 0 20px;
-    }
-    .header {
-        h1 {
-            font-size: 60px;
-            line-height: .9em;
-            padding-bottom: 10px;
-        }
-    }
-}
-
-/* Phone */
-@media (max-width: 480px) {
-    body {
-        padding: 0;
-    }
-    .row {
-        padding: 0 12px;
-    }
-    .header {
-        padding: 25px 0;
-        h1 {
-            font-size: 50px;
-            line-height: .9em;
-            padding-bottom: 10px;
-        }
+    .map .row-fluid .span12 {
+        margin-left: 20px;
     }
 }
