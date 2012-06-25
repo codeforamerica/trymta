@@ -27,11 +27,14 @@ y):(z(i,"mouseup mousedown mousemove",y),z(i,"mouseout",function(a){var b;a:if(b
 jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e),d=jQuery(this);d.data("hammer",c);for(var b="hold tap doubletap transformstart transform transformend dragstart drag dragend swipe release".split(" "),a=0;a<b.length;a++)c["on"+b[a]]=function(a,b){return function(c){a.trigger(jQuery.Event(b,c))}}(d,b[a])})};
 
 
-$(function() {
+(function() {
 
-    // iOS stuff
-    window.top.scrollTo(0, 1);
+    // iOS DOM ready stuff
+    $(function() {
+        window.top.scrollTo(0, 1);
+    })
 
+    // iOS tap event
     $('.btn').hammer().bind('tap', function(e) {
       var self = $(this),
           target = self.attr('data-target');
@@ -39,6 +42,7 @@ $(function() {
       $(target).collapse('toggle');
     });
 
+    // Resize iframe if browser resizes
     var resize = function() {
         var win = $(window),
             height = win.height(),
@@ -50,10 +54,12 @@ $(function() {
           height: height,
           width:width
         })
-    }
+    };
 
+    // Attach it to the window
     $(window).resize(resize);
 
+    // And invoke it right away
     resize();
 
-})
+})();
