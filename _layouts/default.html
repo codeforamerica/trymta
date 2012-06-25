@@ -8,7 +8,11 @@
 
   <meta name="author" content="{{ site.author }}">
   <meta name="description" content="{{ site.description }}">
+  {% if page.size %}
+  <meta name="viewport" content="width={{page.size}}">
+  {% else %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% endif %}
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <!--[if lt IE 9]>
