@@ -48,7 +48,7 @@ jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e
             height = win.height(),
             width = win.width();
 
-        height = (height > 365) ? height : 365;
+        height = (height > 366) ? height : 366;
 
         $('iframe').attr({
           height: height,
