@@ -32,7 +32,7 @@ jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e
     // iOS DOM ready stuff
     $(function() {
         window.top.scrollTo(0, 1);
-    })
+    });
 
     // iOS tap event
     $('.btn').hammer().bind('tap', function(e) {
@@ -48,7 +48,7 @@ jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e
             height = win.height(),
             width = win.width();
 
-        height = (height > 370) ? height : 370;
+        height = (height > 390) ? height : 390;
 
         $('iframe').attr({
           height: height,
