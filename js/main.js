@@ -7,7 +7,7 @@ $(function() {
             height = win.height(),
             width = win.width();
 
-        height = (height > 375) ? height : 375;
+        height = (height > 370) ? height : 370;
 
         $('iframe').attr({
           height: height,
