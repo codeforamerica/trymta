@@ -35,7 +35,7 @@ jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e
         apple = ua.indexOf('iphone') || ua.indexOf('ipod');
 
     if (apple) {
-      $('.apple').removeClass('hidden');
+      $('.apple').removeClass('hide');
     }
 
     // Make the URL bar disappear
