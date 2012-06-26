@@ -29,37 +29,45 @@ jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e
 
 (function() {
 
-    // iOS DOM ready stuff
-    $(function() {
-        window.top.scrollTo(0, 1);
-    });
+  // iOS DOM ready stuff
+  $(function() {
+    var ua = navigator.userAgent.toLowerCase(),
+        apple = ua.indexOf('iphone') || ua.indexOf('ipod');
 
-    // iOS tap event
-    $('.btn').hammer().bind('tap', function(e) {
-      var self = $(this),
-          target = self.attr('data-target');
+    if (apple) {
+      $('.apple').removeClass('hidden');
+    }
 
-      $(target).collapse('toggle');
-    });
+    // Make the URL bar disappear
+    window.top.scrollTo(0, 1);
+  });
 
-    // Resize iframe if browser resizes
-    var resize = function() {
-        var win = $(window),
-            height = win.height(),
-            width = win.width();
+  // iOS tap event
+  $('.btn').hammer().bind('tap', function(e) {
+    var self = $(this),
+        target = self.attr('data-target');
 
-        height = (height > 366) ? height : 366;
+    $(target).collapse('toggle');
+  });
 
-        $('iframe').attr({
-          height: height,
-          width:width
-        })
-    };
+  // Resize iframe if browser resizes
+  var resize = function() {
+    var win = $(window),
+        height = win.height(),
+        width = win.width();
 
-    // Attach it to the window
-    $(window).resize(resize);
+    height = (height > 366) ? height : 366;
 
-    // And invoke it right away
-    resize();
+    $('iframe').attr({
+      height: height,
+      width:width
+    })
+  };
+
+  // Attach it to the window
+  $(window).resize(resize);
+
+  // And invoke it right away
+  resize();
 
 })();

@@ -6,11 +6,23 @@ body {
     padding: 0;
 }
 
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
 .navbar-fixed-top {
     margin: 0;
     width: 100%;
     .navbar-inner {
         #gradient > .vertical(#3f3f3f, #222);
+    }
+    a {
+        border-bottom: 1px dotted #ddd;
+        color: #eee;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
