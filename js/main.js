@@ -34,7 +34,7 @@ jQuery.fn.hammer=function(e){return this.each(function(){var c=new Hammer(this,e
     var ua = navigator.userAgent.toLowerCase(),
         apple = ua.indexOf('iphone') || ua.indexOf('ipod');
 
-    if (apple) {
+    if (apple > 0) {
       $('.apple').removeClass('hide');
     }
 
