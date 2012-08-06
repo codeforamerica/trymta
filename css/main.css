@@ -1,0 +1,31 @@
+header {
+  background: #bada55;
+  height: 300px;
+}
+
+.section {
+  height: 400px;
+  padding: 50px 0;
+}
+
+.subnav {
+  background: #aaa;
+}
+
+.subnav-fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.subnav-fixed .nav {
+  margin: 0 auto;
+  width: 940px;
+}
+
+footer {
+  background: #bada55;
+  height: 300px;
+}
