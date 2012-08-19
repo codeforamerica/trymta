@@ -1,31 +1,26 @@
-header {
-  background: #bada55;
-  height: 300px;
-}
+body {font-family: Alegreya, serif; font-size: 17px;}
+h1 {font-family: Dosis; padding-bottom: 10px;}
+#wholepage {position: relative; /*background-image: url('groovepaper.png');*/ background: #fff; }
+h4 {font-family: Dosis; font-size: 19px; font-weight: 700; text-transform: uppercase; padding: 10px 0px;}
+h3 {font-family: Dosis; font-size: 17px; font-weight: 500; text-transform: uppercase; padding: 10px 0px;}
+p a {color: #B9D800; font-size: 17px;}
 
-.section {
-  height: 400px;
-  padding: 50px 0;
-}
 
-.subnav {
-  background: #aaa;
-}
+header {background: url('/trymtaheader.png') no-repeat  50% 50%; height: 650px;}
 
-.subnav-fixed {
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
+.section {height: 600px; padding: 80px 0;}
 
-.subnav-fixed .nav {
-  margin: 0 auto;
-  width: 940px;
-}
+.nav_container {width: 940px; margin: auto auto; border-top: 7px solid #333; background: #fff; /*background-image: url('brillant.png');*/ padding-top: 9px;}
+.nav-pills {font-family: Dosis; font-weight: 500; font-size: 18px; letter-spacing: .1em;}
 
-footer {
-  background: #bada55;
-  height: 300px;
-}
+/*.nav-pills img {margin-right: 10px;}*/
+.subnav {margin: auto auto; width: 940px;}
+
+.subnav-fixed {margin: auto auto; top: 0px; position: fixed; width: 940px; z-index: 100; border-top: 7px solid #333; background: #fff;}
+
+.subnav-fixed .nav {margin: 0 auto; width: 940px; padding-top: 9px; padding-bottom: 9px;}
+
+.howto ul {list-style-type: decimal;}
+.howto li {padding: 5px 0px;}
+.txtaddress {padding: 5px 0px 0px 15px; margin: 0px; font-style: italic;}
+footer {border-top: 1px solid #333; padding-top: 20px; height: 200px;}

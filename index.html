@@ -5,6 +5,8 @@
     <title>Try MTA</title>
     <meta name="description" content="Riding the bus is cool.">
     <meta name="author" content="Jessica Lord, @jllord && Zach Williams, @zachwill">
+	<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Alegreya:400italic,700italic,900italic,400,700,900' rel='stylesheet' type='text/css'>
+	
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -16,6 +18,7 @@
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="75">
+	  <div id="wholepage">
     <!-- Masthead
     ================================================== -->
       <header>
@@ -30,14 +33,13 @@
         </div>
       </header>
 
-      <div class="container">
+      <div class="nav_container">
         <div class="subnav">
           <ul class="nav nav-pills">
-            <li><a href="#opportunity">The Opportunity</a></li>
-            <li><a href="#program">The Program</a></li>
-            <li><a href="#team">The Team</a></li>
-            <li><a href="#proof">The Proof</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#cfa">ABOUT CFA</a></li>
+            <li><a href="#map">INTERACTIVE SYSTEM MAP</a></li>
+            <li><a href="#sms">TEXT-FOR-BUS APP</a></li>
+            <li><a href="#other">MORE FOR MACON</a></li>
           </ul>
         </div>
       </div>
@@ -45,83 +47,115 @@
       <!-- Wrapper -->
       <div class="container">
 
-        <div class="section" id="opportunity">
+        <div class="section" id="cfa">
           <div class="row">
 
             <div class="span12">
-              <h1>THE OPPORTUNITY</h1>
+              <h1>ABOUT CFA</h1>
             </div>
 
             <div class="span6">
-              <p>Cupcake ipsum dolor sit amet tart fruitcake pie jelly beans.  Sweet pastry pastry dragée marshmallow pudding biscuit. Brownie bear claw lemon drops tootsie roll gummies sweet macaroon chocolate cake. Tootsie roll halvah jujubes jujubes. Cookie muffin chocolate bar marzipan. Jujubes topping pudding sweet roll dragée pie applicake. Liquorice chocolate cake wypas sweet sesame snaps jelly beans tiramisu. Gummi bears faworki faworki chupa chups.  Topping jujubes topping cookie candy canes pastry pie. Cookie apple pie liquorice.</p>
+              <p><a href="http://www.codeforamerica.org/" target="_blank">Code for America</a> is a non-profit based in San Francisco. Each year, we partner developers and designers from our fellowship program with cities to improve the way citizens interface with local government.</p>
+			  <h4>The Team</h4>
+			  <p>Macon, Georgia is one of the <a href="http://codeforamerica.org/cfa-2012/" tartet="_blank">8 cities</a> Code for America is working with in 2012. Macon's CfA team members are: <a href="http://www.twitter.com/zachwill">Zach</a>, a developer from Fort Worth; <a href="http://www.twitter.com/mapmeld">Nick</a>, a digital mapper from Nasuha, NH; and <a href="http://www.twitter.com/jllord">Jessica</a>, an urban designer born and rased in nearby Warner Robins, Ga.</p>
+			  <h4>Get in touch!</h4>
+			  <p>Feel free to contact us with your ideas, suggestions or questions. Ask when we're in town next, we'd love to meet up! Email us at: <a href="mailto:macon@codeforamerica.org">macon@codeforamerica.org</a></p>
+			  
+            </div>
+			<div class="span6">
+			<img src="http://farm8.staticflickr.com/7033/6723369161_55b98669a3.jpg" width="400px">
+</div>
+          </div>
+        </div>
+
+        <div class="section" id="map">
+          <div class="row">
+
+            <div class="span12">
+              <h1>INTERACTIVE SYSTEM MAP</h1>
+            </div>
+
+            <div class="span6">
+              <p>We've created a new and interactive web map of Macon's transit system. The map shows all of the active routes in the system as well as the new BIRD (Bus into Robins Daily) route to Robins Air Force Base.</p>
+			  <p>Each route also includes bus stops so that users can find the stops nearest them. When your mouse hovers over a stop, details for the stop are revealed. </p>
+			  
+            </div>
+            <div class="span6">
+              <p>You can also view the map on the <a href="http://www.mta-macon.com/map.html">MTA's website</a>.</p>
+			  <h4>Coming Soon</h4>
+			  <p>You'll be able to see the next two times a bus will visit a particular bus stop.</p>
+	
+            </div>
+			
+            <div class="span12">
+              <iframe width='100%' height='475' frameBorder='0' src='http://a.tiles.mapbox.com/v3/jllord.mta.html#14/32.8366/-83.6377'></iframe>
             </div>
 
           </div>
         </div>
 
-        <div class="section" id="program">
+        <div class="section" id="sms">
           <div class="row">
 
             <div class="span12">
-              <h1>THE PROGRAM</h1>
+              <h1>TEXT-FOR-BUS APP</h1>
             </div>
 
             <div class="span6">
-              <p>Cupcake ipsum dolor sit amet tart fruitcake pie jelly beans.  Sweet pastry pastry dragée marshmallow pudding biscuit. Brownie bear claw lemon drops tootsie roll gummies sweet macaroon chocolate cake. Tootsie roll halvah jujubes jujubes. Cookie muffin chocolate bar marzipan. Jujubes topping pudding sweet roll dragée pie applicake. Liquorice chocolate cake wypas sweet sesame snaps jelly beans tiramisu. Gummi bears faworki faworki chupa chups.  Topping jujubes topping cookie candy canes pastry pie. Cookie apple pie liquorice.</p>
+              <p>Using historic data gathered form the GPS systems on each of the MTA's buses, we've created an application that allows anyone with a text-enabled phone to get information about bus schedules. 
+			  <h4>How to</h4>
+			  	<div class="howto">
+					<ul>
+				  <li>Text your location to <strong>487-426-7272</strong>. No need to include the city; write an address like this:
+				  <p class="txtaddress">123 Main Street</p></li>
+				  
+				  <li>The system will text you back the stop nearest to you as well as the next bus to come <strong>inbound</strong> (towards Terminal Station) or <strong>outbound</strong> (away from Terminal Station) to that stop.</li>
+				<li>If you need help, just text "help".</li>
+				</div>
+			  <h4>Give it a try!</h4>
+			 <p>No smart phone necessary and nothing to download - if you can text, you can get bus times!</p>
+			 
             </div>
-
+            <div class="span6"  style="text-align: center;">
+			
+              <img src="/iphone_sms.png" width=" 250px">
+            </div>
           </div>
         </div>
 
-        <div class="section" id="team">
+        <div class="section" id="other">
           <div class="row">
 
             <div class="span12">
-              <h1>THE TEAM</h1>
+              <h1>MORE FOR MACON</h1>
             </div>
-
             <div class="span6">
-              <p>Cupcake ipsum dolor sit amet tart fruitcake pie jelly beans.  Sweet pastry pastry dragée marshmallow pudding biscuit. Brownie bear claw lemon drops tootsie roll gummies sweet macaroon chocolate cake. Tootsie roll halvah jujubes jujubes. Cookie muffin chocolate bar marzipan. Jujubes topping pudding sweet roll dragée pie applicake. Liquorice chocolate cake wypas sweet sesame snaps jelly beans tiramisu. Gummi bears faworki faworki chupa chups.  Topping jujubes topping cookie candy canes pastry pie. Cookie apple pie liquorice.</p>
+				<h4>SPLOST</h4>
+              <p>CfA's Macon team is also working on a website to visualize the budget of the general SPLOST that was passed earlier this year. At the website, residents will be able to see exactly where projects are located, how much money a project will recieve and when its funds are disperesed.</p>
+			  <h3>Tell us what you think!</h3>
+			  <p>We'd love to hear from you. What would make you feel good about the SPLOST projects? What would make you feel confident in the progress of projects? Email us at: <a href="mailto:macon@codeforamerica.org">macon@codeforamerica.org</a></p>
+			  <h4>Macon Mapping Event</h4>
+			  <p>We're currently planning a public mapping event in September. The Macon team will come to town and together with residents, city-staff and local organizations we'll help populate Macon on <a href="http://www.openstreetmap.org/" target="blank">Open Street Maps</a> (an open-source online map). Stay tuned to twitter for details, or let us know if <a href="mailto:macon@codeforamerica.org"> you'd like to be emailed with details</a>. </p>
             </div>
-
+            <div class="span6">
+              <img src="splostchart.png" />
+            </div>
           </div>
         </div>
 
-        <div class="section" id="proof">
-          <div class="row">
-
-            <div class="span12">
-              <h1>THE PROOF</h1>
-            </div>
-            <div class="span6">
-              <p>Cupcake ipsum dolor sit amet tart fruitcake pie jelly beans.  Sweet pastry pastry dragée marshmallow pudding biscuit. Brownie bear claw lemon drops tootsie roll gummies sweet macaroon chocolate cake. Tootsie roll halvah jujubes jujubes. Cookie muffin chocolate bar marzipan. Jujubes topping pudding sweet roll dragée pie applicake. Liquorice chocolate cake wypas sweet sesame snaps jelly beans tiramisu. Gummi bears faworki faworki chupa chups.  Topping jujubes topping cookie candy canes pastry pie. Cookie apple pie liquorice.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="section" id="faq">
-          <div class="row">
-
-            <div class="span12">
-              <h1>FAQ</h1>
-            </div>
-
-            <div class="span6">
-              <p>Cupcake ipsum dolor sit amet tart fruitcake pie jelly beans.  Sweet pastry pastry dragée marshmallow pudding biscuit. Brownie bear claw lemon drops tootsie roll gummies sweet macaroon chocolate cake. Tootsie roll halvah jujubes jujubes. Cookie muffin chocolate bar marzipan. Jujubes topping pudding sweet roll dragée pie applicake. Liquorice chocolate cake wypas sweet sesame snaps jelly beans tiramisu. Gummi bears faworki faworki chupa chups.  Topping jujubes topping cookie candy canes pastry pie. Cookie apple pie liquorice.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
+      
    <!-- Footer
     ================================================== -->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="span12">
-          </div>
+            <div class="span6">
+              <p>Site and tools brought to you by Code for America in partnership with the City of Macon and Macon-Bibb Transit Authority.</p>
+            </div>
+            <div class="span6">
+              <img src="logos.png" / width = "400px">
+            </div>
+          
         </div>
       </div>
     </footer>
@@ -129,5 +163,6 @@
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <script type='text/javascript' src='/js/bootstrap.min.js'></script>
     <script type='text/javascript' src='/js/main.js'></script>
+	</div>
   </body>
 </html>
