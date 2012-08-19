@@ -8,7 +8,7 @@ p a {color: #B9D800; font-size: 17px;}
 
 header {background: url('/trymtaheader.png') no-repeat  50% 50%; height: 650px;}
 
-.section {height: 600px; padding: 85px 0;}
+.section {height: 600px; padding: 90px 0;}
 
 .nav_container {width: 940px; margin: auto auto; border-top: 7px solid #333; background: #fff; /*background-image: url('brillant.png');*/ padding-top: 9px;}
 .nav-pills {font-family: Dosis; font-weight: 500; font-size: 18px; letter-spacing: .1em;}
